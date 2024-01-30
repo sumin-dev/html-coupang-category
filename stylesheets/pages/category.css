@@ -1,0 +1,297 @@
+/* 카테고리별 추천 광고상품 */
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
+/* 전체 영역 */
+.wrap {
+  width: 1022px;
+  margin: 100px auto 48px;
+}
+
+/* header 영역 */
+.header {
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-size: 0;
+}
+
+.header a {
+  display: block;
+  width: 246px;
+  margin-left: 11px;
+}
+
+/* section > title 영역 */
+.title {
+  margin-left: 2px;
+  margin-bottom: 24px;
+}
+
+.title > span {
+  font-size: 16px;
+}
+
+.title h2 span:last-child {
+  color: var(--color-blue-600);
+  margin-left: 10px;
+}
+
+/* section > article 영역 */
+article {
+  display: flex;
+  height: 634px;
+}
+
+.living {
+  border: 1px solid var(--color-brown-300);
+  border-left: hidden;
+  border-right: hidden;
+}
+
+.kitchen {
+  margin-top: 24px;
+
+  border: 1px solid var(--color-green-700);
+  border-left: hidden;
+  border-right: hidden;
+}
+
+/* section > article > left 영역 */
+.left {
+  width: 174px;
+}
+
+.left > h3 {
+  font-size: 24px;
+  margin: 48px 0px 8px 24px;
+  font-weight: normal;
+}
+
+.living .left > h3 {
+  color: var(--color-brown-300);
+}
+
+.kitchen .left > h3 {
+  color: var(--color-green-700);
+}
+
+.left > a {
+  font-size: 14px;
+  color: var(--color-gray-700);
+  font-weight: bold;
+
+  display: inline-block;
+  padding-right: 10px;
+  margin: 0px 0px 248px 24px;
+
+  background-image: url('../../assets/icon/angle-right-default.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.left > h4 {
+  font-size: 18px;
+  margin: 0px 0px 20px 24px;
+  font-weight: normal;
+}
+
+.hashtag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 216px;
+  margin-left: 24px;
+}
+
+.hashtag li {
+  font-size: 12px;
+  text-align: center;
+  line-height: 26px;
+
+  height: 26px;
+  border: 1px solid var(--color-gray-400);
+}
+
+.living .hashtag li {
+  color: var(--color-brown-300);
+}
+
+.kitchen .hashtag li {
+  color: var(--color-green-700);
+}
+
+.hashtag a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.three-char {
+  width: 61px;
+}
+
+.four-char {
+  width: 72px;
+}
+
+.five-char {
+  width: 83px;
+}
+
+.six-char {
+  width: 94px;
+}
+
+.seven-char {
+  width: 106px;
+}
+
+.eight-char {
+  width: 117px;
+}
+
+/* section > article > center 영역 */
+.center {
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-img {
+  display: flex;
+}
+
+.banner-text {
+  width: 260px;
+  height: 90px;
+  color: var(--color-white);
+  text-align: center;
+
+  position: absolute;
+  top: 483px;
+  left: 30px;
+  z-index: 1;
+}
+
+.living .banner-text {
+  background-color: var(--color-brown-300);
+}
+
+.kitchen .banner-text {
+  background-color: var(--color-green-700);
+}
+
+.banner-text p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-top: 19px;
+  margin-bottom: 8px;
+}
+
+.banner-text p:last-child {
+  font-size: 14px;
+}
+
+.indicator {
+  width: 32px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 597px;
+  left: 144px;
+  z-index: 2;
+}
+
+.indicator input {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-gray-600);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator input:checked {
+  background-color: var(--color-gray-700);
+}
+
+/* section > article > right 영역 */
+.right {
+  width: 528px;
+  position: relative;
+}
+
+.right::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--color-gray-600);
+}
+
+.right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right li {
+  width: 160px;
+  height: 300px;
+}
+
+.right a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.first-line li {
+  margin: 9px 0px 0px 16px;
+}
+
+.second-line li {
+  margin: 16px 0px 9px 16px;
+}
+
+.item-title {
+  font-size: 14px;
+  width: 152px;
+  margin: 12px 4px;
+}
+
+.item-price {
+  margin-left: 4px;
+}
+
+.item-price p {
+  font-size: 14px;
+  color: var(--color-red-500);
+  margin-bottom: 4px;
+}
+
+.item-price span:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-price span:last-of-type {
+  font-size: 14px;
+}
