@@ -43,7 +43,7 @@ ul {
   font-size: 16px;
 }
 
-.title h2 span:last-child {
+.title h2 span {
   color: var(--color-blue-600);
   margin-left: 10px;
 }
@@ -51,7 +51,6 @@ ul {
 /* section > article 영역 */
 article {
   display: flex;
-  height: 634px;
 }
 
 .living {
@@ -193,16 +192,16 @@ article {
   background-color: var(--color-green-700);
 }
 
+.banner-text p {
+  font-size: 14px;
+}
+
 .banner-text p:first-child {
   font-size: 18px;
   font-weight: bold;
 
   margin-top: 19px;
   margin-bottom: 8px;
-}
-
-.banner-text p:last-child {
-  font-size: 14px;
 }
 
 .indicator {
@@ -287,11 +286,11 @@ article {
   margin-bottom: 4px;
 }
 
+.item-price span {
+  font-size: 14px;
+}
+
 .item-price span:first-of-type {
   font-size: 18px;
   font-weight: bold;
-}
-
-.item-price span:last-of-type {
-  font-size: 14px;
 }
