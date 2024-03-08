@@ -172,6 +172,10 @@ article {
   display: flex;
 }
 
+.banner-img img {
+  height: 634px;
+}
+
 .banner-text {
   width: 260px;
   height: 90px;
